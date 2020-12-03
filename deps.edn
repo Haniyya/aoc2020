@@ -1,2 +1,4 @@
-{:deps
+{:aliases {:cljfmt {:extra-deps {cljfmt {:mvn/version "0.6.4"}}
+                    :main-opts ["-m" "cljfmt.main" "fix"]}}
+ :deps
  {org.clojure/core.logic {:mvn/version "1.0.0"}}}
