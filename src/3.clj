@@ -25,4 +25,3 @@
                   [1 7]
                   [2 1]]]
   (->> (map trees-on-path directions) (reduce *)))
-
