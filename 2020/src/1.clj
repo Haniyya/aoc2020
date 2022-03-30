@@ -20,7 +20,7 @@
 (def sumo (partial reduceo 0 fd/+))
 
 (defn expense-product [n]
-  (let [vars (repeatedly n lvar)]
+  (let [vars (lvars n)]
     (run 1 [q]
          (everyg #(membero % data) vars)
          (everyg #(fd/< % 2020) vars)

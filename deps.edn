@@ -1,5 +1,8 @@
-{:aliases {:cljfmt {:extra-deps {cljfmt {:mvn/version "0.6.4"}}
+{:aliases {:cljfmt {:extra-deps {cljfmt/cljfmt {:mvn/version "0.6.4"}}
                     :main-opts ["-m" "cljfmt.main" "fix"]}}
  :deps
  {org.clojure/core.logic {:mvn/version "1.0.0"}
+  instaparse/instaparse {:mvn/version "1.4.10"}
+  org.clojure/core.match {:mvn/version "1.0.0"}
+  prismatic/plumbing {:mvn/version "0.6.0"}
   org.clojure/core.async {:mvn/version "1.3.610"}}}
